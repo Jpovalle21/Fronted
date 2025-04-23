@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi primera página web</title>
-    <style>
-        body {
-            background-color: #f0f8ff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h1 {
-            color: #333366;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        .boton {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .boton:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sobre mí</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9; /* Color de fondo pastel */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+    .container {
+      background-color: #fff; /* Fondo blanco para resaltar contenido */
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    .container h1 {
+      color: #5b5ea6; /* Color bonito pastel */
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .container p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #666;
+    }
+    .avatar {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 20px 0;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      color: #5b5ea6; /* Color de enlace */
+      text-decoration: none;
+      font-size: 1.2em;
+      margin: 0 15px;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hola, mundo</h1>
-    <p>Esta es mi primera página web hecha con HTML y un poco de CSS.</p>
-    <a href="#" class="boton">Haz clic aquí</a>
+  <div class="container">
+    <!-- Aquí puedes colocar tu propia imagen -->
+    <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&s=200" alt="Juan Pablo Ovalle" class="avatar">
+    <h1>Hola, soy Juan Pablo Ovalle</h1>
+    <p>Estudio Análisis y Desarrollo de Software. Me apasiona el fútbol y la tecnología.</p>
+    <p>¡Bienvenidos a mi página de presentación!</p>
+
+    <div class="social-links">
+      <p>Contáctame: <strong>3132728697</strong></p>
+      <a href="https://www.instagram.com/_ovalle_21/" target="_blank">Instagram</a>
+    </div>
+  </div>
 </body>
 </html>
